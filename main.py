@@ -39,11 +39,12 @@ async def start_handler(bot: Client, event: Message):
         quote=True,
         reply_markup=InlineKeyboardMarkup(
             [
-                [InlineKeyboardButton("Channel", url="https://t.me/TeleRoidGroup"),
-                 InlineKeyboardButton("Support", url="https://t.me/TeleRoid14")],
-                [InlineKeyboardButton("🍃 Help", callback_data="help"),
-                 InlineKeyboardButton("🗣️ About", callback_data="about")],
-                [InlineKeyboardButton("🔐 Close", callback_data="closeMeh")]
+                 InlineKeyboardButton("ՏႮᏢᏢϴᎡͲ ♥️", url="https://t.me/mksupport1")],
+                [InlineKeyboardButton("ᏟϴᎷᎷᎪΝᎠՏ ❓", callback_data="help")
+            ],
+            [
+                 InlineKeyboardButton("ᎪᏴϴႮͲ😽", callback_data="about")],
+                [InlineKeyboardButton("💢 ᏟᏞϴՏᎬ", callback_data="closeMeh")]
             ]
         )
     )
@@ -60,9 +61,9 @@ async def start_handler(bot: Client, event: Message):
         quote=True,
         reply_markup=InlineKeyboardMarkup(
             [
-                [InlineKeyboardButton("🏡 Home", callback_data="home"),
-                 InlineKeyboardButton("🗣️ About", callback_data="about")],
-                [InlineKeyboardButton("🔐 Close", callback_data="closeMeh")]
+                [InlineKeyboardButton("🏡 ᎻϴᎷᎬ", callback_data="home"),
+                 InlineKeyboardButton("ᎪᏴϴႮͲ 😽", callback_data="about")],
+                [InlineKeyboardButton("💢 ᏟᏞϴՏᎬ", callback_data="closeMeh")]
             ]
         )
     )
@@ -79,9 +80,9 @@ async def start_handler(bot: Client, event: Message):
         quote=True,
         reply_markup=InlineKeyboardMarkup(
             [
-                [InlineKeyboardButton("🏡 Home", callback_data="home"),
-                 InlineKeyboardButton("🍃 Help", callback_data="help")],
-                [InlineKeyboardButton("🔐 Close", callback_data="closeMeh")]
+                [InlineKeyboardButton("🏡 ᎻϴᎷᎬ", callback_data="home"),
+                 InlineKeyboardButton("ᏟϴᎷᎷᎪΝᎠՏ ❓", callback_data="help")],
+                [InlineKeyboardButton("💢 ᏟᏞϴՏᎬ", callback_data="closeMeh")]
             ]
         )
     )
@@ -187,13 +188,13 @@ async def rename_handler(bot: Client, event: Message):
                             )
                 except Exception as err:
                     try:
-                        await reply_.edit(f"Unable to Download File!\n**Error:** `{err}`")
+                        await reply_.edit(f"Sᴏʀʀʏ Dᴜᴅᴇ Uɴᴀʙʟᴇ Tᴏ Rᴇɴᴀᴍᴇ A ғɪʟᴇ, Sᴏᴍᴇᴛʜɪɴɢ Eʀʀᴏʀ, Tʀʏ Aɢᴀɪɴ😳:** `{err}`")
                     except:
                         print(f"Unable to Download File for {str(event.from_user.id)} !!\n**Error:** `{err}`")
             elif ask_.text and (ask_.text.startswith("/") is True):
                 await reply_.edit("Current Process Cancelled!")
         except TimeoutError:
-            await reply_.edit("Sorry Unkil,\n5 Minutes Passed! I can't wait more. Send me the File Once Again to Rename.")
+            await reply_.edit("Dᴜᴅᴇ Wʜᴀᴛ  A Eʟsᴇ Dᴏᴅᴇᴅ I Wᴀɪᴛᴇᴅ Mᴏʀᴇ 5 Mɪɴs Sᴇɴᴅ Mᴇ Fɪʟᴇ Tᴏ Rᴇɴᴀᴍᴇ🤯")
 
 
 @RenameBot.on_message(filters.private & filters.photo & ~filters.edited)
@@ -245,13 +246,13 @@ async def show_thumb_handler(bot: Client, event: Message):
                 await bot.send_message(
                     chat_id=event.chat.id,
                     text=f"Unable to send Thumbnail!\n\n**Error:** `{err}`",
-                    reply_markup=InlineKeyboardMarkup([[InlineKeyboardButton("🔐 Close 🔐", callback_data="closeMeh")]]),
+                    reply_markup=InlineKeyboardMarkup([[InlineKeyboardButton("💢 ᏟᏞϴՏᎬ", callback_data="closeMeh")]]),
                     reply_to_message_id=event.message_id
                 )
             except:
                 pass
     else:
-        await event.reply_text("No Thumbnail Found in Database!\nSend a Thumbnail to Save it for New File.", quote=True)
+        await event.reply_text("Nᴏ Tʜᴜᴍʙɴᴀɪʟ Is Fᴏᴜɴᴅ🧐, Sᴇɴᴅ Tʜᴇ Tʜᴜᴍʙɴᴀɪʟ Tᴏ Sᴀᴠᴇ!", quote=True)
 
 
 @RenameBot.on_message(filters.private & filters.command("settings"))
@@ -303,7 +304,7 @@ async def callback_handlers(bot: Client, cb: CallbackQuery):
         if current_prefix is None:
             await cb.answer("Currently you didn't set any File Name Prefix!", show_alert=True)
             await cb.message.edit(
-                text="Send me a File Name Prefix!"
+                text="Sᴇɴᴅ Mᴇ A Fɪʟᴇ Nᴀᴍᴇ Pʀᴇғɪx!"
             )
             try:
                 ask_: Message = await bot.listen(cb.message.chat.id, timeout=300)
@@ -325,8 +326,8 @@ async def callback_handlers(bot: Client, cb: CallbackQuery):
                 text=f"**Current Prefix:** `{current_prefix}`",
                 reply_markup=InlineKeyboardMarkup(
                     [
-                        [InlineKeyboardButton("Set New Prefix", callback_data="forceNewPrefix"),
-                         InlineKeyboardButton("Go Back", callback_data="openSettings")]
+                        [InlineKeyboardButton("Sᴇᴛ Nᴇᴡ Pʀᴇғɪx❔", callback_data="forceNewPrefix"),
+                         InlineKeyboardButton("Gᴏ Bᴀᴄᴋ⛷️", callback_data="openSettings")]
                     ]
                 )
             )
@@ -340,14 +341,14 @@ async def callback_handlers(bot: Client, cb: CallbackQuery):
                 await bot.send_photo(
                     chat_id=cb.message.chat.id,
                     photo=thumbnail,
-                    reply_markup=InlineKeyboardMarkup([[InlineKeyboardButton("Delete Thumbnail", callback_data="deleteThumbnail")]])
+                    reply_markup=InlineKeyboardMarkup([[InlineKeyboardButton("Dᴇʟᴇᴛᴇ Tʜᴜᴍʙɴᴀɪʟ🤷", callback_data="deleteThumbnail")]])
                 )
             except Exception as err:
                 try:
                     await bot.send_message(
                         chat_id=cb.message.chat.id,
                         text=f"Unable to send Thumbnail!\n\n**Error:** `{err}`",
-                        reply_markup=InlineKeyboardMarkup([[InlineKeyboardButton("🔐 Close ", callback_data="closeMeh")]])
+                        reply_markup=InlineKeyboardMarkup([[InlineKeyboardButton("💢 Cʟᴏsᴇ", callback_data="closeMeh")]])
                     )
                 except:
                     pass
@@ -361,7 +362,7 @@ async def callback_handlers(bot: Client, cb: CallbackQuery):
             try:
                 await cb.message.edit(
                     text=f"**Current Custom Caption:**\n\n`{custom_caption_}`",
-                    reply_markup=InlineKeyboardMarkup([[InlineKeyboardButton("✒ Change Custom Caption ✒", callback_data="forceChangeCaption")]])
+                    reply_markup=InlineKeyboardMarkup([[InlineKeyboardButton("✒ Cʜᴀɴɢᴇ Cᴜsᴛᴏᴍ Cᴀᴘᴀᴛɪᴏɴ ✒", callback_data="forceChangeCaption")]])
                 )
             except MessageNotModified:
                 pass
@@ -381,8 +382,8 @@ async def callback_handlers(bot: Client, cb: CallbackQuery):
                         quote=True,
                         reply_markup=InlineKeyboardMarkup(
                             [
-                                [InlineKeyboardButton("Try Again", callback_data="triggerCaption"),
-                                 InlineKeyboardButton("🚶Go Back", callback_data="openSettings")]
+                                [InlineKeyboardButton("Tʀʏ Aɢᴀɪɴ🥏", callback_data="triggerCaption"),
+                                 InlineKeyboardButton("💢 Bᴀᴄᴋ", callback_data="openSettings")]
                             ]
                         )
                     )
@@ -393,20 +394,20 @@ async def callback_handlers(bot: Client, cb: CallbackQuery):
                 await cb.message.edit(
                     "Custom Caption Removed Successfully!",
                     reply_markup=InlineKeyboardMarkup([
-                        [InlineKeyboardButton("Here Settings", callback_data="openSettings"),
-                         InlineKeyboardButton("🔐 Close", callback_data="closeMeh")]
+                        [InlineKeyboardButton("Hᴇʀᴇ Sᴇᴛᴛɪɴɢs🌀", callback_data="openSettings"),
+                         InlineKeyboardButton("🌬️Cʟᴏsᴇ", callback_data="closeMeh")]
                     ])
                 )
             elif ask_.text and (ask_.text.startswith("/") is True):
                 await cb.message.edit(
                     text="Current Process Cancelled!",
                     reply_markup=InlineKeyboardMarkup(
-                        [[InlineKeyboardButton("🚶Go Back", callback_data="openSettings")]])
+                        [[InlineKeyboardButton("💢 Bᴀᴄᴋ", callback_data="openSettings")]])
                 )
         except TimeoutError:
             await cb.message.edit(
                 text="Sorry Unkil,\n5 Minutes Passed! I can't wait more.",
-                reply_markup=InlineKeyboardMarkup([[InlineKeyboardButton("🚶 Go Back", callback_data="openSettings")]])
+                reply_markup=InlineKeyboardMarkup([[InlineKeyboardButton("💢 Bᴀᴄᴋ", callback_data="openSettings")]])
             )
     elif "about" in cb.data:
         await cb.edit_message_text(
@@ -416,11 +417,13 @@ async def callback_handlers(bot: Client, cb: CallbackQuery):
             reply_markup=InlineKeyboardMarkup(
                 [
 					[
-						InlineKeyboardButton("🔅 Sᴏᴜʀᴄᴇ ᴄᴏᴅᴇ", url="https://t.me/Moviesflixers_DL")
+						InlineKeyboardButton("🕵️ Sᴏᴜʀᴄᴇ Cᴏᴅᴇ", url="https://t.me/mksupport1")
 					],
 					[
-						InlineKeyboardButton("♻ Help", callback_data="help"),
-						InlineKeyboardButton("🏠 Hᴏᴍᴇ", callback_data="home")
+						InlineKeyboardButton("ᏟϴᎷᎷᎪΝᎠՏ ❓", callback_data="help")
+                                        ],
+                                        [
+						InlineKeyboardButton("🏠 ᎻϴᎷᎬ", callback_data="home")
 					]
 	        ]
             )
@@ -434,11 +437,11 @@ async def callback_handlers(bot: Client, cb: CallbackQuery):
             reply_markup=InlineKeyboardMarkup(
                 [
                                         [
-						InlineKeyboardButton("🔅 Sᴏᴜʀᴄᴇ ᴄᴏᴅᴇ ", url="https://t.me/Moviesflixers_DL")
+						InlineKeyboardButton("🕵️ Sᴏᴜʀᴄᴇ ᴄᴏᴅᴇ ", url="https://t.me/mksupport1")
 					],
 					[
-						InlineKeyboardButton("👥 Aʙᴏᴜᴛ", callback_data="about"),
-						InlineKeyboardButton("🏠 Hᴏᴍᴇ", callback_data="home")
+						InlineKeyboardButton("ᎪᏴϴႮͲ 😽", callback_data="about"),
+						InlineKeyboardButton("🏠 ᎻϴᎷᎬ", callback_data="home")
 					]
                 ]
             )
@@ -451,16 +454,17 @@ async def callback_handlers(bot: Client, cb: CallbackQuery):
             disable_web_page_preview=True,
             reply_markup=InlineKeyboardMarkup(
                 [
-                    [
-						InlineKeyboardButton("Sᴜᴘᴘᴏʀᴛ", url="https://t.me/TeleRoid14"),
-						InlineKeyboardButton("Cʜᴀɴɴᴇʟ", url="https://t.me/TeleRoidGroup")
+                  
+						InlineKeyboardButton("ՏႮᏢᏢϴᎡͲ ♥️", url="https://t.me/mksupport1")
 					],
                                         [
-						InlineKeyboardButton("🍃 Help ", callback_data="help"),
-						InlineKeyboardButton("🗣️ About", callback_data="about")
+						InlineKeyboardButton("ᏟϴᎷᎷᎪΝᎠՏ❓", callback_data="help")
+                                        ],
+                                        [
+						InlineKeyboardButton("tᎪᏴϴႮͲ 😽", callback_data="about")
 			                ],
                                         [
-						InlineKeyboardButton("🔐 Cʟᴏsᴇ ", callback_data="closeMeh") 
+						InlineKeyboardButton("🌬️ᏟᏞϴՏᎬ", callback_data="closeMeh") 
 					]
                 ]
             )
