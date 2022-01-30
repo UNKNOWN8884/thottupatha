@@ -10,5 +10,5 @@ async def SetupPrefix(text: str, user_id: int, editable: Message):
     await db.set_prefix(user_id, prefix=text)
     await editable.edit(
         text=f"File Name Prefix Successfully Added!\n\n**Prefix:** `{ascii_}`",
-        reply_markup=InlineKeyboardMarkup([[InlineKeyboardButton("🚶Go Back", callback_data="openSettings")]])
+        reply_markup=InlineKeyboardMarkup([[InlineKeyboardButton("🚶Gᴏ Bᴀᴄᴋ", callback_data="openSettings")]])
     )
