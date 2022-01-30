@@ -41,7 +41,7 @@ async def start_handler(bot: Client, event: Message):
             [
                  [InlineKeyboardButton("ՏႮᏢᏢϴᎡͲ ♥️", url="https://t.me/mksupport1")],
                  InlineKeyboardButton("ᏟϴᎷᎷᎪΝᎠՏ❓", callback_data="help"),
-                 InlineKeyboardButton("ᎪᏴϴႮͲ 😽", callback_data="about")],
+                 InlineKeyboardButton("ᎪᏴϴႮͲ 😽", callback_data="about"),
                 [InlineKeyboardButton("🌬️ᏟᏞϴՏᎬ", callback_data="closeMeh")]
             ]
         )
