@@ -1,4 +1,4 @@
-# (c) @AbirHasan2005
+# (c) @CRACKERON
 
 import os
 import asyncio
@@ -42,21 +42,13 @@ async def UploadFile(bot: Client, message: Message, file_path: str, file_size):
             ),
             force_document=True,
             thumb=file_thumbnail,
-            caption=((Config.CAPTION.format((await bot.get_me()).username) + f"\n\n📂**File Name:** `{file_path.rsplit('/', 1)[-1]}`\n🗂**File Size:** `{humanbytes(file_size)}`") if (caption_ is None) else caption_),
-            reply_markup=InlineKeyboardMarkup(
-                [
-                    [InlineKeyboardButton("Channel", url="https://t.me/TeleRoidGroup"),
-                     InlineKeyboardButton("Support", url="https://t.me/TeleRoid14")],
-                    [InlineKeyboardButton("Help", callback_data="help"),
-                     InlineKeyboardButton("About", callback_data="about")],
-                    [InlineKeyboardButton("🔐 Close", callback_data="closeMeh")]
-                ]
-            )
-        )
+            caption=((Config.CAPTION.format((await bot.get_me()).username) + f"\n\n📂**Fɪʟᴇ Nᴀᴍᴇ:** `{file_path.rsplit('/', 1)[-1]}`\n🗂**Fɪʟᴇ Sɪᴢᴇ:** `{humanbytes(file_size)}`") if (caption_ is None) else caption_),
+           
+
         await asyncio.sleep(Config.SLEEP_TIME)
         forward_ = await sent_.forward(chat_id=Config.LOG_CHANNEL)
         await forward_.reply_text(
-            text=f"**User:** [{message.chat.first_name}](tg://user?id={str(message.chat.id)})\n🗣️**Username:** `{message.chat.username}`\n🍃**UserID:** `{message.chat.id}`",
+            text=f"**User:** [{message.chat.first_name}](tg://user?id={str(message.chat.id)})\n🧾**Rᴇᴄɪᴘᴇᴛ Usᴇʀɴᴀᴍᴇ:** `{message.chat.username}`\n🍃**Usᴇʀ Iᴅ:** `{message.chat.id}`",
             disable_web_page_preview=True,
             quote=True
         )
@@ -145,17 +137,9 @@ async def UploadVideo(bot: Client, message: Message, file_path: str, file_size, 
             thumb=video_thumbnail,
             width=width,
             height=height,
-            caption=((Config.CAPTION.format((await bot.get_me()).username) + f"\n\n**File Name:** `{file_path.rsplit('/', 1)[-1]}`\n**File Size:** `{humanbytes(file_size)}`") if (caption_ is None) else caption_),
-            reply_markup=InlineKeyboardMarkup(
-                [
-                    [InlineKeyboardButton("Channel", url="https://t.me/TeleRoidGroup"),
-                     InlineKeyboardButton("Support", url="https://t.me/TeleRoid14")],
-                    [InlineKeyboardButton("Help", callback_data="help"),
-                     InlineKeyboardButton("About", callback_data="about")],
-                    [InlineKeyboardButton("🔐 Close", callback_data="closeMeh")]
-                ]
-            )
-        )
+            caption=((Config.CAPTION.format((await bot.get_me()).username) + f"\n\n**📽️Vɪᴅᴇᴏ Nᴀᴍᴇ:** `{file_path.rsplit('/', 1)[-1]}`\n**Vɪᴅᴇᴏ Sɪᴢᴇ:** `{humanbytes(file_size)}`") if (caption_ is None) else caption_),
+            
+
         await asyncio.sleep(Config.SLEEP_TIME)
         forward_ = await sent_.forward(chat_id=Config.LOG_CHANNEL)
         await forward_.reply_text(
