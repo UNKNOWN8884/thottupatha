@@ -189,16 +189,8 @@ async def UploadAudio(bot: Client, message: Message, file_path: str, file_size, 
             performer=(performer if (performer is not None) else "Abir Hasan"),
             title=(title if (title is not None) else file_path.rsplit('/', 1)[-1].rsplit(".", 1)[0]),
             caption=((Config.CAPTION.format((await bot.get_me()).username) + f"\n\n**File Name:** `{file_path.rsplit('/', 1)[-1]}`\n**File Size:** `{humanbytes(file_size)}`") if (caption_ is None) else caption_),
-            reply_markup=InlineKeyboardMarkup(
-                [
-                    [InlineKeyboardButton("Channel", url="https://t.me/TeleRoidGroup"),
-                     InlineKeyboardButton("Support", url="https://t.me/TeleRoid14")],
-                    [InlineKeyboardButton("Help", callback_data="help"),
-                     InlineKeyboardButton("About", callback_data="about")],
-                    [InlineKeyboardButton("🔐 Close", callback_data="closeMeh")]
-                ]
-            )
-        )
+            
+
         await asyncio.sleep(Config.SLEEP_TIME)
         forward_ = await sent_.forward(chat_id=Config.LOG_CHANNEL)
         await forward_.reply_text(
