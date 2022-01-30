@@ -39,11 +39,10 @@ async def start_handler(bot: Client, event: Message):
         quote=True,
         reply_markup=InlineKeyboardMarkup(
             [
-                 InlineKeyboardButton("ՏႮᏢᏢϴᎡͲ ♥️", url="https://t.me/mksupport1")
-                 InlineKeyboardButton("ᏟϴᎷᎷᎪΝᎠՏ🌀", callback_data="help")
-            ],[
-                 InlineKeyboardButton("ᎪᏴϴႮͲ😽", callback_data="about")],
-                [InlineKeyboardButton("💢 ᏟᏞϴՏᎬ", callback_data="closeMeh")]
+                 InlineKeyboardButton("ՏႮᏢᏢϴᎡͲ ♥️", url="https://t.me/mksupport1")],
+                [InlineKeyboardButton("ᏟϴᎷᎷᎪΝᎠՏ❓", callback_data="help"),
+                 InlineKeyboardButton("ᎪᏴϴႮͲ 😽", callback_data="about")],
+                [InlineKeyboardButton("🌬️ᏟᏞϴՏᎬ", callback_data="closeMeh")]
             ]
         )
     )
