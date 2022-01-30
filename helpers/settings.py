@@ -12,12 +12,12 @@ async def OpenSettings(event: Message, user_id: int):
             text="Here is Your Settings: Now It's On Your Hand ",
             reply_markup=InlineKeyboardMarkup(
                 [
-                    [InlineKeyboardButton(f"Upload as Doc {'✅' if ((await db.get_upload_as_doc(user_id)) is True) else '❌'}",
+                    [InlineKeyboardButton(f"ႮᏢᏞϴᎪᎠ ᎪՏ ҒᏆᏞᎬ {'📂' if ((await db.get_upload_as_doc(user_id)) is True) ᏙᏆᎠᎬϴ '📽️'}",
                                           callback_data="triggerUploadMode")],
-                    [InlineKeyboardButton("✏️ Name Prefix✏️", callback_data="triggerPrefix"),
-                     InlineKeyboardButton("🖼 Thumbnail 🖼", callback_data="triggerThumbnail")],
-                    [InlineKeyboardButton("✒ Caption ✒", callback_data="triggerCaption")],
-                    [InlineKeyboardButton("🔐 Close 🔐", callback_data="closeMeh")]
+                    [InlineKeyboardButton("ᏢᎡᎬҒᏆХ ΝᎪᎷᎬ✏️", callback_data="triggerPrefix"),
+                     InlineKeyboardButton("🖼 ͲᎻႮᎷᏴΝᎪᏆᏞ", callback_data="triggerThumbnail")],
+                    [InlineKeyboardButton("✒ ᏟᎪᏢͲᏆϴΝ ", callback_data="triggerCaption")],
+                    [InlineKeyboardButton("🌬️ ᏟᏞϴՏᎬ", callback_data="closeMeh")]
                 ]
             )
         )
