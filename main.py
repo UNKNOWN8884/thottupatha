@@ -453,11 +453,11 @@ async def callback_handlers(bot: Client, cb: CallbackQuery):
             reply_markup=InlineKeyboardMarkup(
                 [
                   
-						InlineKeyboardButton("ՏႮᏢᏢϴᎡͲ ♥️", url="https://t.me/mksupport1")
+						InlineKeyboardButton("ՏႮᏢᏢϴᎡͲ ♥️", url="https://t.me/mksupport1"),
                                                 InlineKeyboardButton("ᏟϴᎷᎷᎪΝᎠՏ❓", callback_data="help")
 					],
                                         [
-					        InlineKeyboardButton("tᎪᏴϴႮͲ 😽", callback_data="about")	
+					        InlineKeyboardButton("tᎪᏴϴႮͲ 😽", callback_data="about"),	
                                                 InlineKeyboardButton("🌬️ᏟᏞϴՏᎬ", callback_data="closeMeh") 
 					]
                 ]
