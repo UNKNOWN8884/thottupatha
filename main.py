@@ -452,14 +452,16 @@ async def callback_handlers(bot: Client, cb: CallbackQuery):
             disable_web_page_preview=True,
             reply_markup=InlineKeyboardMarkup(
                 [
-                   [
-                  
-						InlineKeyboardButton("ՏႮᏢᏢϴᎡͲ ♥️", url="https://t.me/mksupport1"),
-                                                InlineKeyboardButton("ᏟϴᎷᎷᎪΝᎠՏ❓", callback_data="help")
+                    [
+						InlineKeyboardButton("Sᴜᴘᴘᴏʀᴛ", url="https://t.me/Mksupport1"),
+						InlineKeyboardButton("Cʜᴀɴɴᴇʟ", url="https://t.me/firstshowers")
 					],
                                         [
-					        InlineKeyboardButton("ᎪᏴϴႮͲ 😽", callback_data="about")	
-                                                InlineKeyboardButton("🌬️ᏟᏞϴՏᎬ", callback_data="closeMeh"),
+						InlineKeyboardButton("🍃 Hᴇʟᴘ  ", callback_data="help"),
+						InlineKeyboardButton("Aʙᴏᴜᴛ😊", callback_data="about")
+			                ],
+                                        [
+						InlineKeyboardButton("🔐 Cʟᴏsᴇ ", callback_data="closeMeh") 
 					]
                 ]
             )
@@ -467,3 +469,5 @@ async def callback_handlers(bot: Client, cb: CallbackQuery):
         
 
 RenameBot.run()
+
+                
