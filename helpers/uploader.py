@@ -207,9 +207,11 @@ async def UploadAudio(bot: Client, message: Message, file_path: str, file_size, 
             caption=((Config.CAPTION.format((await bot.get_me()).username) + f"\n\n**File Name:** `{file_path.rsplit('/', 1)[-1]}`\n**File Size:** `{humanbytes(file_size)}`") if (caption_ is None) else caption_),
             reply_markup=InlineKeyboardMarkup(
                 [
-                   
-                   [InlineKeyboardButton("ՏႮᏢᏢϴᎡͲ 🔥", url="https://t.me/Mksupport1")
-                    InlineKeyboardButton("🌬️ᏟᏞϴՏᎬ", callback_data="closeMeh")],
+                    [InlineKeyboardButton("Channel", url="https://t.me/TeleRoidGroup"),
+                     InlineKeyboardButton("Support", url="https://t.me/TeleRoid14")],
+                    [InlineKeyboardButton("Help", callback_data="help"),
+                     InlineKeyboardButton("About", callback_data="about")],
+                    [InlineKeyboardButton("🔐 Close", callback_data="closeMeh")]
                 ]
             )
         )
