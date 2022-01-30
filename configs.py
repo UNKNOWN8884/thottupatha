@@ -18,57 +18,59 @@ class Config(object):
     BROADCAST_AS_COPY = bool(os.environ.get("BROADCAST_AS_COPY", False))
     ONE_PROCESS_ONLY = bool(os.environ.get("ONE_PROCESS_ONLY", False))
     START_TEXT = """
-This is Telegram File Renameing Bot.
+Hɪ Bʀᴏ/ Sɪs Hᴏᴡ Aʀᴇ Yᴏᴜ?
 
-Send me any type of media  or File to Rename it .
+♥️MY Nᴀᴍᴇ Is :[Mᴋ Rᴇɴᴀᴍᴇʀ](https://t.me/Renamermk_bot)
 
-Made with ❤ by @TeleRoidGroup.
+♂️ I Rᴇɴᴀᴍᴇ Yᴏᴜʀ Fɪʟᴇs Wɪᴛʜ Mʏ Mᴀxɪᴍᴜᴍ Sᴘᴇᴇᴅ
+
+♂️ Gɪᴠᴇ /help Fᴏʀ Mᴏʀᴇ Iɴғᴏ
+
+♥️Mᴀᴅᴇ Bʏ:@CRACKERON
     """
-    HELP_TEXT = """**Follow these Steps For Using Meh..**
+    HELP_TEXT = """**Fᴏʟʟᴏᴡ Tʜᴇsᴇ Sᴛᴇᴘs Tᴏ Uɴᴅᴇʀsᴛᴀɴᴅ Mᴇ🦋**
  
-**➠ Configure the Settings before using me.....
-➠ Send a photo to set it as your custom thumbnail..... 
-➠ Send any File or media you want to rename..... 
-➠ That's it, and rest is mine work..... 
-📝 Available Commands 📝
-- /start - Start the Bot
-- /help - How to Use
-- /about - About Me
-- /settings - Configure Settings 
-- /show_thumb & /del_thumb - For Thumbnail
-© Made with ❤ By @TheTeleRoid**
+**➠ Cᴏɴғɪɢᴜʀᴇ Mʏ Sᴇᴛᴛɪɴɢs Bᴇғᴏʀᴇ Usɪɴɢ Mᴇ🧬
+➠ Sᴇɴᴅ A Pʜᴏᴛᴏ Tᴏ Sᴇᴛ As Tʜᴇ Fɪʟᴇ Pʜᴏᴛᴏ🧬
+➠ Sᴇɴᴅ Aɴʏ Fɪʟᴇ Oʀ Vɪᴅᴇᴏ Tᴏ Rᴇɴᴀᴍᴇ🧬
+➠ Aɴᴅ Sᴇɴᴅ Wʜᴀᴛ Fɪʟᴇ Nᴀᴍᴇ Yᴏᴜ Wᴀɴᴛ Tᴏ Sᴇᴛ🧬
+      Eɴᴊᴏʏ Eɴᴊᴀᴍɪ🐗
+
+📝 Rᴇɴᴀᴍᴇ Cᴏᴍᴍᴀɴᴅs 📝
+- /start - Tᴏ Aᴡᴀᴋᴇ Mᴇ😇
+- /help - Tᴏ Yᴏᴜ Kɴᴏᴡ Hᴏᴡ Tᴏ Usᴇ Mᴇ
+- /about - Aʙᴏᴜᴛ Mᴇ🤭
+- /settings - Sᴇᴛᴛɪɴɢs 👀
+- /show_thumb & /del_thumb -Fᴏʀ Tʜᴜᴍʙᴀɴɪʟ
+
+© Mᴀᴅᴇ Bʏ♥️ :@CRACKERON **
 """
-    ABOUT_TEXT = """
-This is a Renamer bOt with Permanent Thumbnail Support. 
-Send Me any Media or File I can Rename It. 
-╭───[🔅@RenamerXDBot🔅]──⍟
+    ABOUT_TEXT = """ 
+╭───[🔅@Renamermk_bot🔅]──⍟
 │
-├🤖**My Name:** [@RenameDBot](https://t.me/Renamedbot)
+├🤖**Mʏ Nᴀᴍᴇ:** [Rᴇɴᴀᴍᴇʀ Mᴋ](https://t.me/renamermk_bot)
+
 │
-├📝**Language:** [Python3](https://www.python.org)
+├📡**Hᴏsᴛɪɴɢ Oɴ:** Tᴇʟᴇɢʀᴀᴍ, Pʟᴜs
+
+├👨‍💻**Developer:** [A Cʀᴀᴄᴋᴇʀ](https://t.me/CRACKERON) 
+
+├👥**Bᴏᴛ Sᴜᴘᴘᴏʀᴛ :** [Sᴜᴘᴘᴏʀᴛ](https://t.me/Mksupport1)
 │
-├📚**Library:** [Pyrogram](https://docs.pyrogram.org)
+   Tʜᴀɴᴋs Tᴏ Bʀᴏ/ Sɪs Usɪɴɢ ᴍᴇ♥️
 │
-├📡**Hosted On:** [Heorku](https://heroku.com)
-│
-├👨‍💻**Developer:** [@Predator](https://t.me/PredatorHackerzZ) 
-│
-├👥**Bot Support:** [Support](https://t.me/TeleRoid14)
-│
-├🔔**Bot Updates:** [Channel](https://t.me/TeleRoidGroup)
-│
-╰──────[ 😎 ]───────────⍟
+╰──────[ ♥️ ]───────────⍟
     """
     PROGRESS = """\n
-╭───[**🔅Progress Bar🔅**]───⍟
+╭───[** Pʀᴏɢʀᴇss 🕐 **]───⍟
 │
-├📁 Size : {2}
+├📁 Sɪᴢᴇ : {2}
 │
-├✅ Done : {1}
+├✅ Dᴏɴᴇ : {1}
 │
-├🚀 Percentage : {0}%
+├🚀 Pᴇʀᴄᴇɴᴛᴀɢᴇ : {0}%
 │
-├⚡ Speed : {3}/s
+├⚡ Sᴘᴇᴇᴅ  : {6}/s
 │
-├⏱️ Time : {4}
+├⏱️ Tɪᴍᴇ : {5}
 ╰─────────────────⍟"""
