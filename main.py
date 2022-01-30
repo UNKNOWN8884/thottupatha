@@ -452,13 +452,14 @@ async def callback_handlers(bot: Client, cb: CallbackQuery):
             disable_web_page_preview=True,
             reply_markup=InlineKeyboardMarkup(
                 [
+                   [
                   
 						InlineKeyboardButton("ՏႮᏢᏢϴᎡͲ ♥️", url="https://t.me/mksupport1"),
                                                 InlineKeyboardButton("ᏟϴᎷᎷᎪΝᎠՏ❓", callback_data="help")
 					],
                                         [
 					        InlineKeyboardButton("ᎪᏴϴႮͲ 😽", callback_data="about")	
-                                                [InlineKeyboardButton("🌬️ᏟᏞϴՏᎬ", callback_data="closeMeh")],
+                                                InlineKeyboardButton("🌬️ᏟᏞϴՏᎬ", callback_data="closeMeh"),
 					]
                 ]
             )
