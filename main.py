@@ -459,7 +459,6 @@ async def callback_handlers(bot: Client, cb: CallbackQuery):
                                         [
 					        InlineKeyboardButton("tᎪᏴϴႮͲ 😽", callback_data="about")	
                                                 InlineKeyboardButton("🌬️ᏟᏞϴՏᎬ", callback_data="closeMeh") 
-						
 					]
                 ]
             )
