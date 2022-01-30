@@ -40,7 +40,7 @@ async def start_handler(bot: Client, event: Message):
         reply_markup=InlineKeyboardMarkup(
             [
                  InlineKeyboardButton("ՏႮᏢᏢϴᎡͲ ♥️", url="https://t.me/mksupport1")
-                 InlineKeyboardButton("ᏟϴᎷᎷᎪΝᎠՏ ❓", callback_data="help")
+                 InlineKeyboardButton("ᏟϴᎷᎷᎪΝᎠՏ ❓, callback_data="help")
             ],
             [
                  InlineKeyboardButton("ᎪᏴϴႮͲ😽", callback_data="about")],
