@@ -35,7 +35,7 @@ async def start_handler(bot: Client, event: Message):
     if FSub == 400:
         return
     await event.reply_text(
-        text=f"Hi, {event.from_user.mention}\n{Config.START_TEXT}",
+        f"Hi, {event.from_user.mention}\n{Config.START_TEXT}",
         quote=True,
         reply_markup=InlineKeyboardMarkup(
             [
@@ -55,7 +55,7 @@ async def start_handler(bot: Client, event: Message):
     if FSub == 400:
         return
     await event.reply_text(
-        text=f"{Config.HELP_TEXT}",
+        f"{Config.HELP_TEXT}",
         quote=True,
         reply_markup=InlineKeyboardMarkup(
             [
@@ -74,7 +74,7 @@ async def start_handler(bot: Client, event: Message):
     if FSub == 400:
         return
     await event.reply_text(
-        text=f"{Config.ABOUT_TEXT}",
+        f"{Config.ABOUT_TEXT}",
         quote=True,
         reply_markup=InlineKeyboardMarkup(
             [
@@ -102,7 +102,7 @@ async def rename_handler(bot: Client, event: Message):
     media = event.video or event.audio or event.document
     if media and media.file_name:
         reply_ = await event.reply_text(
-            text=f"**Current File Name:** `{media.file_name}`\n\nSend me New File Name!",
+            f"**Current File Name:** `{media.file_name}`\n\nSend me New File Name!",
             quote=True
         )
         download_location = f"{Config.DOWNLOAD_PATH}/{str(event.from_user.id)}/{str(time.time())}/"
