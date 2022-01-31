@@ -42,7 +42,7 @@ async def UploadFile(bot: Client, message: Message, file_path: str, file_size):
             ),
             force_document=True,
             thumb=file_thumbnail,
-            caption=f"`{file_path.rsplit('/', 1)[-1]}`
+            caption=f"`{file_path.rsplit('/', 1)[-1]}`"
         )
         await asyncio.sleep(Config.SLEEP_TIME)
         forward_ = await sent_.forward(chat_id=Config.LOG_CHANNEL)
