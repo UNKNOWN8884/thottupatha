@@ -13,7 +13,7 @@ async def OpenSettings(event: Message, user_id: int):
             reply_markup=InlineKeyboardMarkup(
                 [
                     [InlineKeyboardButton(f"upload as document {'✅' if ((await db.get_upload_as_doc(user_id)) is True) else '❌'}",
-                                          callback_data="triggerUploadMode")]               
+                                          callback_data="triggerUploadMode")],               
                     [InlineKeyboardButton("ᏢᎡᎬҒᏆХ ΝᎪᎷᎬ✏️", callback_data="triggerPrefix"),
                      InlineKeyboardButton("🖼 ͲᎻႮᎷᏴΝᎪᏆᏞ", callback_data="triggerThumbnail")],
                     [InlineKeyboardButton("✒ ᏟᎪᏢͲᏆϴΝ ", callback_data="triggerCaption")],
