@@ -42,6 +42,7 @@ async def start_handler(bot: Client, event: Message):
                  [InlineKeyboardButton("ՏႮᏢᏢϴᎡͲ ♥️", url="https://t.me/mksupport1")],
                  [InlineKeyboardButton("ᎻᎬᏞᏢ⚡", callback_data="help"),
                  InlineKeyboardButton("ᎪᏴϴႮͲ 😊", callback_data="about")],
+		 [InlineKeyboardButton("ᏟᎡᎬᎠᏆͲՏ 😺", callback_data="credit")],
                 [InlineKeyboardButton("🌬️ᏟᏞϴՏᎬ", callback_data="closeMeh")]
             ]
         )
@@ -424,6 +425,20 @@ async def callback_handlers(bot: Client, cb: CallbackQuery):
 						InlineKeyboardButton("🏠 ᎻϴᎷᎬ", callback_data="home")
 					]
 	        ]
+            )
+        )
+	
+    elif "credit" in cb.data:
+        await cb.edit_message_text(
+            "Nɪᴄᴇ Tʜᴀɴᴋs Tᴏ Tʜᴇsᴇ Gᴜʏs\n\n@CRACKERON Mᴇ😂\n@rsrmusic Hᴇʟᴘᴇʀ😊",
+            parse_mode="Markdown",
+            disable_web_page_preview=True,
+            reply_markup=InlineKeyboardMarkup(
+                [
+                                        [
+						InlineKeyboardButton("🏠 ᎻϴᎷᎬ", callback_data="home")
+					]
+                ]
             )
         )
 
